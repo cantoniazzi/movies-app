@@ -1,3 +1,4 @@
+import { MoviesContainer } from './styles/MovieContainer';
 import { Header } from './components/Header';
 import { MoviesList } from './components/MoviesList';
 
@@ -6,9 +7,9 @@ function App() {
     <div className="App">
       <Header />
 
-      <section>
+      <MoviesContainer>
         <MoviesList movies={[]} />
-      </section>
+      </MoviesContainer>
     </div>
   );
 }
