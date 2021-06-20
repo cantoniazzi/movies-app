@@ -2,7 +2,7 @@ import axios from "axios";
 
 const BASE_URI = 'https://api.themoviedb.org/3';
 
-const formatUri = (path) => `${BASE_URI}${path}?api_key=${process.env.REACT_APP_API_KEY}`;
+const formatUri = path => `${BASE_URI}${path}?api_key=${process.env.REACT_APP_API_KEY}`;
 
 export class MoviesService {
     static getMovies() {
